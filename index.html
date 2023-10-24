@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="icon" href="logo.png" type="image/x-icon">
+        <style>
+            body {
+                width: 80%;
+                margin: 0 auto;
+                padding: 0;
+                }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <svg width="24" height="35" viewBox="0 0 24 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="logo">
+                    <g id="Home" clip-path="url(#clip0_5_7)">
+                        <path id="K" d="M-1.7983 30V0.90909H5.23295V13.2102H5.61648L15.233 0.90909H23.5142L13.2017 13.892L23.6989 30H15.2898L8.04545 18.5653L5.23295 22.1165V30H-1.7983Z" fill="#F5B041"/>
+                        <path id="L" d="M-2.0277 38V-1.27273H7.46449V30.2912H23.8026V38H-2.0277Z" fill="#F39C12"/>
+                    </g>
+                </g>
+                <defs>
+                    <clipPath id="clip0_5_7">
+                        <rect width="24" height="35"/>
+                    </clipPath>
+                </defs>
+            </svg>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="./public/resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+
+                <label for="search-field">Search: </label>
+                <input type="search" id="search-field" list="quick-nav">
+
+                <datalist id="quick-nav">
+                    <option value="Projects">
+                    <option value="MVP">
+                    <option value="Restaurant Management">
+                    <option value="Secure Band">
+                    <option value="Skills">
+                    <option value="Programming">
+                    <option value="Database">
+                    <option value="Tools">
+                </datalist>
+
+                <label for="mode-select">Choose Mode: </label>
+                <select id="mode-select">
+                    <optgroup label="Modes:"></optgroup>
+                    <option value="lightmode">Light Mode</option>
+                    <option value="darkmode">Dark Mode</option>
+                </select>
+
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="name&image">
+                    <h1 id="my-name">Hi!<br/>I'm Kim Lim</h1>
+                    <picture>
+                        <source srcset="https://placehold.co/300" media="(min-width: 800px)">
+                        <source srcset="https://placehold.co/200" media="(max-width: 400px)">
+                        <img id="my-img" src="https://placehold.co/250" alt="placeholder">
+                    </picture>
+                    <audio controls autoplay>
+                        <source src="./public/audio/background.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+
+                </div>
+                <div class="title&slogan">
+                    <h1 id="title">Creative Developer</h1>
+                    <pre id="slogan">
+                        <strong><em>
+                            From Lines of Code to Magic on Screen.
+                            That's My Thing.
+                        </em></strong>
+                    </pre>
+                </div>
+            </section>
+            <hr/>
+            <section class="about-me" id="about">
+                <h2 class="section-title">About me</h2>
+                <p id="about-me-content">
+                    My journey began by the allure of video games. The concept of virtual worlds piqued my interest and
+                    their interactive narratives sparked a fire within me, a fire that propelled me to embark
+                    on a path of innovation and creativity. The path that I am taking, however, isn't easy,
+                    but as the saying goes: <br/>
+                    <code>if (theres_a_will):</code><br/>
+                    <code>print(there's a way)</code><br>
+                    Currently, I am attending at the <span>University of California San Diego</span> as a computer science student,
+                    learning the fundamentals of computers whilst honing my skills. My experience in this school was both
+                    fascinating and challenging. The classroom has become my laboratory, and every lecture offered new
+                    perspectives which unveiled pieces of the mysteries that powers the digital world.
+                    These experiences - <span>the classroom and the late-night coding sessions</span> - were all threads weaving
+                    together the tapestry of my growth. And now, I present to you my portfolio - a testament to the
+                    milestones I've reached, the lessons I've learned, and the dreams I've dared to pursue.
+                </p>
+            </section>
+            <hr/>
+            <section class="skills-section">
+                <table width="100%">
+                    <caption><h2 class="section-title">Skills</h2></caption>
+                    <colgroup>
+                        <col style="background-color: lightgray;">
+                    </colgroup>
+                    <tr>
+                        <th class="category">Programming</th>
+                        <td class="skill">
+                            <p class="skill-name">Java</p>
+                        </td>
+                        <td class="skill">
+                            <p class="skill-name">JavaScript</p>
+                        </td>
+                        <td class="skill">
+                            <p class="skill-name">Python</p>
+                        </td>
+                        <td class="skill">
+                            <p class="skill-name">HTML</p>
+                        </td>
+                        <td class="skill">
+                            <p class="skill-name">CSS</p>
+                        </td>
+                    </tr>
+                    <tr class="skill-row">
+                        <th class="category">Database</th>
+                        <td class="skill">
+                            <p class="skill-name">MySQL</p>
+                        </td>
+                    </tr>
+                    <tr class="skill-row">
+                        <th class="category">Tools</th>
+                        <td class="skill">
+                            <p class="skill-name">Eclipse</p>
+                        </td>
+                        <td class="skill">
+                            <p class="skill-name">Github</p>
+                        </td>
+                        <td class="skill">
+                            <p class="skill-name">VSCode</p>
+                        </td>
+                        <td class="skill">
+                            <p class="skill-name">PyCharm</p>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <hr/>
+            <section class="project-section" id="projects">
+                <h2 class="section-title"> Selected Work</h2>
+                <div class="project">
+                    <h3 class="project-name">MVP Ideation Platform</h3>
+                    <figure class="project-image">
+                        <img src="https://placehold.co/450x300" alt="placeholder" width="450" height="300">
+                        <figcaption>
+                            The MVP IdeaHub is a web app that fosters creativity and innovation.
+                        </figcaption>
+                    </figure>
+                    <details class="project-description">
+                        <summary>Click to view details</summary>
+                        <p class="project-description">
+                            The <b><i>MVP Ideation Platform</i></b> is developed with FastAPI framework and
+                            stores data through MySQL. This platform provides a space for users
+                            to explore and share their MVP (Minimum Viable Product) ideas.
+                            It offers essential social networking features, including
+                            user registration, login, profile viewing, leaderboards, and MVP updates.
+                            The platform prioritizes user security through JWT token-based authentication
+                            and authorization. By utilizing a MySQL database, user information is securely
+                            stored and readily accessible.
+                        </p>
+                        <a class="project-link" id="mvp" href="MVP.html" target="_blank">Learn More</a>
+                        <a class="project-link" id="mvp-source" href="https://github.com/lkimdaryl/MVPIdeation" target="_blank">Github</a>
+                    </details>
+                </div>
+                <br/>
+                <div class="project">
+                    <h2 class="project-name">Restaurant Management System</h2>
+                    <figure class="project-image">
+                        <img src="https://placehold.co/450x300" alt="placeholder" width="450" height="300">
+                        <figcaption>The Restaurant Management System streamlines order and processing</figcaption>
+                    </figure>
+                    <details class="project-description">
+                        <summary>click to view details</summary>
+                        <p class="project-description">
+                            The <b><i>Restaurant Management System</i></b> is a dynamic web application I developed as
+                            part of an engineering class project. Built using FastAPI and MySQL, this system
+                            streamlines restaurant operations by facilitating menu item management and order
+                            processing. Its interface is user-friendly and leverages RESTful APIs to manage
+                            menu items and orders efficiently. Furthermore, I integrated some error handling mechanisms
+                            to enhance the application's reliability.
+                        </p>
+                        <button class="source-link" id="RMS-bttn">View Source</button>
+                    </details>
+                </div>
+                <br>
+                <div class="projects">
+                    <h2 class="project-name">SecureBand</h2>
+                    <figure class="project-image-container">
+                        <img src="https://placehold.co/450x300" alt="placeholder" width="450" height="300">
+                        <figcaption>SecureBand is a technology that protects kids from harm</figcaption>
+                    </figure>
+                    <details>
+                        <summary>click to view details</summary>
+                        <p class="project-description">
+                            <b><i>SecureBand</i></b> is a group project developed in one of my classes. It is an IoT GPS tracking device
+                            designed to aid parents and caretakers in monitoring the locations of their children.
+                            Combining hardware and software components, the project utilizes an
+                            ESP32 microcontroller for GPS data transmission to an external MQTT server. On the software
+                            side, a FastAPI-based web server, alongside JavaScript, HTML, and CSS, powers the user
+                            interface, offering functionalities such as account registration, login, settings management,
+                            child device tracking, and emergency contact information access. The communication between
+                            hardware and software relies on MQTT, with data stored in a MySQL database. There are some
+                            limitations we encountered but the project represents a viable first iteration with future
+                            optimization potential and the aspiration of expanding into mobile applications for broader
+                            accessibility.
+                        </p>
+                        <button class="source-link" id="SB-bttn">View Source</button>
+                    </details>
+                </div>
+            </section>
+            <hr/>
+            <section class="contact-container" id="contact">
+                <aside class="my-contact-info">
+                    <h2>Get in Touch</h2>
+                    <ol>
+                        <li>Phone: (619) 636 - 9526 </li>
+                        <li>Email: lkimdaryl@gmail.com </li>
+                    </ol>
+                </aside>
+                <div class="send-mssg">
+                    <form id="messageForm" action="/send_message" method="POST"> <!-- Replace "/process" with the URL or route to your Python script -->
+                        <fieldset>
+                            <legend>Send a message</legend>
+                            <div class="input-row">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="input-row">
+                                <label for="message">Message:</label>
+                            </div>
+                            <div class="input-row">
+                                <div id="notification"></div>
+                                <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message here" required></textarea>
+                            </div>
+                            <button type="submit" id="send-bttn">Send</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+            <hr/>
+            <section class="experiment-zone" id="experiment">
+                <h2>The Fun Zone</h2>
+                <canvas class="canvas" width="400" height="200"></canvas>
+                <template id="my-template">
+                    <canvas class="canvas" width="400" height="200"></canvas>
+                </template>
+
+                <!-- A container where the template content will be inserted -->
+                <div id="content-container"></div>
+                <button id="insert-button">Add Canvas</button>
+                <button id="remove-button">Remove Canvas</button>
+            </section>
+
+        </main>
+
+        <footer>
+          <p>&copy; 2023 My Portfolio</p>
+        </footer>
+    </body>
+</html>

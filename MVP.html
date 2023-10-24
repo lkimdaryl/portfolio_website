@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="icon" href="logo.png" type="image/x-icon">
+        <style>
+            body {
+                width: 80%;
+                margin: 0 auto;
+                padding: 0;
+                }
+        </style>
+    </head>
+    <body>
+        <header>
+            <svg width="24" height="35" viewBox="0 0 24 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="logo">
+                    <g id="Home" clip-path="url(#clip0_5_7)">
+                        <path id="K" d="M-1.7983 30V0.90909H5.23295V13.2102H5.61648L15.233 0.90909H23.5142L13.2017 13.892L23.6989 30H15.2898L8.04545 18.5653L5.23295 22.1165V30H-1.7983Z" fill="#F5B041"/>
+                        <path id="L" d="M-2.0277 38V-1.27273H7.46449V30.2912H23.8026V38H-2.0277Z" fill="#F39C12"/>
+                    </g>
+                </g>
+                <defs>
+                    <clipPath id="clip0_5_7">
+                        <rect width="24" height="35"/>
+                    </clipPath>
+                </defs>
+            </svg>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="./public/resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="Intro">
+                <h1>MVP Ideahub</h1>
+
+                <h2>A Glimpse Inside</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NpEaa2P7qZI"></iframe>
+                <p>
+                    The MVP Ideation repository is not just an abstract concept; it's a fully functional
+                    web application. It's a digital canvas where budding entrepreneurs and visionaries
+                    can bring their ideas to life. To get started, let's explore the features and the
+                    technologies that power this platform.
+                </p>
+            </section>
+
+            <section class="Features" id="UI-interface">
+                <h3>1. User-Friendly Interface</h3>
+                <p>
+                    The platform boasts an intuitive and user-friendly interface designed to make your
+                    experience seamless. Let's take a closer look at the different pages that make up the website:
+                </p>
+
+                <h4>Homepage</h4>
+                <picture>
+                    <source srcset="https://placehold.co/450x300" media="(min-width: 800px)">
+                    <source srcset="https://placehold.co/300x300" media="(max-width: 400px)">
+                    <img src="https://placehold.co/400x300" alt="placeholder" width="450" height="300">
+                </picture>
+
+                <h4>Sign up Page</h4>
+                <picture>
+                    <source srcset="https://placehold.co/450x300" media="(min-width: 800px)">
+                    <source srcset="https://placehold.co/300x300" media="(max-width: 400px)">
+                    <img src="https://placehold.co/400x300" alt="placeholder" width="450" height="300">
+                </picture>
+
+                <h4>Login Page</h4>
+                <picture>
+                    <source srcset="https://placehold.co/450x300" media="(min-width: 800px)">
+                    <source srcset="https://placehold.co/300x300" media="(max-width: 400px)">
+                    <img src="https://placehold.co/400x300" alt="placeholder" width="450" height="300">
+                </picture>
+
+                <h4>User's MVP page</h4>
+                <picture>
+                    <source srcset="https://placehold.co/450x300" media="(min-width: 800px)">
+                    <source srcset="https://placehold.co/300x300" media="(max-width: 400px)">
+                    <img src="https://placehold.co/400x300" alt="placeholder" width="450" height="300">
+                </picture>
+
+                <h4>Leaderboard Page</h4>
+                <picture>
+                    <source srcset="https://placehold.co/450x300" media="(min-width: 800px)">
+                    <source srcset="https://placehold.co/300x300" media="(max-width: 400px)">
+                    <img src="https://placehold.co/400x300" alt="placeholder" width="450" height="300">
+                </picture>
+
+                <h4>Profile Settings Page</h4>
+                <picture>
+                    <source srcset="https://placehold.co/450x300" media="(min-width: 800px)">
+                    <source srcset="https://placehold.co/300x300" media="(max-width: 400px)">
+                    <img src="https://placehold.co/400x300" alt="placeholder" width="450" height="300">
+                </picture>
+            </section>
+
+            <section class="Features" id="Security">
+                <h3>2. Authentication and Authorization</h3>
+                <p>
+                    Security is of the utmost importance when creating a platform like MVP Ideation.
+                    This application employs JSON Web Tokens (JWT) for authentication and authorization.
+                    When a user logs in, a JWT token is generated and returned to the client. To ensure
+                    secure interactions with the platform, this token must be included in the Authorization
+                    header of subsequent requests that require authentication.
+                </p>
+            </section>
+
+            <section class="Features" id="Storage">
+                <h3>3. MySQL Database</h3>
+                <p>
+                    All the data that drives the platform, including user information, is securely
+                    stored in a MySQL database. This ensures the reliability and persistence of the
+                    user data and MVP ideas.
+                </p>
+            </section>
+
+            <section class="Procedures">
+                <h2>How it Works</h2>
+                <video controls src="https://placehold.co/450x300.mp4"></video>
+                <ol>
+                    <li>
+                        User Registration: Users can easily sign up by providing their basic information.
+                    </li>
+                    <li>
+                        User Authentication: Once registered, users can log in securely, and a JWT token
+                        is generated for them.
+                    </li>
+                    <li>
+                        Creating MVP Ideas: Users can share their innovative MVP ideas with the community.
+                        Each idea is unique and brings something special to the platform.
+                    </li>
+                    <li>
+                        Exploring MVPs: Users can view MVP ideas created by others. The Leaderboard
+                        page helps users discover popular MVPs.
+                    </li>
+                    <li>
+                        Profile Customization: Users can personalize their profiles, giving them a
+                        unique identity on the platform.
+                    </li>
+                </ol>
+
+            </section>
+
+            <section class="Conclusion">
+                <h2>The Community of Innovators</h2>
+                <p>
+                    The MVP Ideation platform is more than just a collection of MVP ideas;
+                    it's a vibrant community of innovators, dreamers, and creators. It's a place where
+                    like-minded individuals can connect, collaborate, and inspire each other to bring
+                    their ideas to life.
+                </p>
+            </section>
+        </main>
+
+    </body>
+</html>
